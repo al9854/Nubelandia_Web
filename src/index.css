@@ -1,0 +1,75 @@
+@import '@fontsource/baloo-2/500.css';
+@import '@fontsource/baloo-2/600.css';
+@import '@fontsource/baloo-2/700.css';
+@import '@fontsource/baloo-2/800.css';
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/nunito/800.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Baloo 2', 'Nunito', ui-sans-serif, sans-serif;
+
+  --color-rosa: #e2457a;
+  --color-rosa-600: #d63a6e;
+  --color-rosa-700: #b8285d;
+  --color-morado: #8a4fd8;
+  --color-morado-600: #7a3fc8;
+  --color-morado-700: #6a34b8;
+  --color-azul: #2f7fd0;
+  --color-tinta: #1f2a44;
+  --color-tinta-600: #2c3a5c;
+  --color-verde: #219a6e;
+  --color-naranja: #d97a0e;
+  --color-rojo: #d93a3a;
+  --color-fondo: #f4f7fb;
+
+  --color-rosa-50: #fdecf2;
+  --color-morado-50: #f3edfd;
+  --color-morado-100: #ebe1fb;
+  --color-azul-50: #e8f2fc;
+  --color-azul-100: #d9e9fa;
+  --color-verde-50: #e5f6ef;
+  --color-naranja-50: #fff5e6;
+  --color-rojo-50: #fdecef;
+
+  --color-morado-900: #5b2fa6;
+  --color-azul-800: #1f5f9e;
+  --color-verde-800: #1d7a55;
+  --color-naranja-800: #9a5a0b;
+  --color-rojo-800: #b3243f;
+
+  --color-texto-2: #5b6684;
+  --color-texto-3: #7a849b;
+  --color-texto-4: #8a93a8;
+  --color-borde: #e1e7f0;
+  --color-linea: #eef1f6;
+  --color-gris-50: #f6f7fa;
+  --color-gris-100: #f1f3f8;
+
+  --radius-card: 22px;
+  --shadow-card: 0 1px 0 #e6ebf3, 0 8px 24px rgb(31 42 68 / 0.06);
+  --shadow-pop: 0 0 0 1px #e1e7f0, 0 16px 32px rgb(31 42 68 / 0.14);
+}
+
+@layer base {
+  html {
+    background: var(--color-fondo);
+  }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #9aa4b8;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
